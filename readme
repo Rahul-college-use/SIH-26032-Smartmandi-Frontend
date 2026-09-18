@@ -1,0 +1,86 @@
+# 🌾 SmartMandi - Frontend Application (PWA)
+
+**Smart India Hackathon (SIH 2026) Submission**  
+**Problem Statement ID:** 26032  
+**Team Name:** The Intruders  
+
+This repository contains the frontend client for the **SmartMandi** ecosystem. Built as a Progressive Web App (PWA) using React.js, it provides a highly accessible, dual-interface platform designed for both rural farmers and mandi operators.
+
+---
+
+## ✨ Key Frontend Features & UI Innovations
+
+*   **Progressive Web App (PWA):** Installable on mobile devices with optimized performance for low-bandwidth rural networks. 
+*   **Multi-Lingual Voice Bot Support:** An inclusive voice-navigated UI that enables elderly and non-tech-savvy farmers to book slots, check queues, and get MSP updates without needing digital literacy.
+*   **Real-Time Live Dashboard:** Integrates `Socket.io-client` to display zero-refresh queue positions and dynamic Estimated Time of Arrival (ETA) timers on the farmer's screen.
+*   **Geofence Verification UI:** Prompts and securely fetches the user's GPS coordinates (`lat/lng`) to validate their physical presence within the 800m Mandi radius before allowing check-in.
+*   **Smart QR Scanner (Operator Portal):** Integrated camera scanner for operators to instantly verify farmer tokens at the gate and update the 4:1 dynamic walk-in queue.
+*   **Intuitive Booking Engine:** A simplified, step-by-step UI for farmers to select dates and view transparent slot availability based on the backend capacity engine.
+
+---
+
+## 🛠️ Frontend Tech Stack
+
+*   **Core Library:** React.js
+*   **Real-Time Engine:** Socket.io-client
+*   **State Management:** React Context API / Redux (Update as per your project)
+*   **Routing:** React Router DOM
+*   **Styling:** CSS3 / Tailwind CSS (Update as per your project)
+*   **Deployment/Build:** Vite / Create React App
+
+---
+
+## ⚙️ Prerequisites
+
+*   [Node.js](https://nodejs.org/en/) (v18.0.0 or higher)
+*   Make sure the [SmartMandi Backend Server](https://github.com/Rahul-college-use/SIH-26032-SmartMandi-Backend) is running locally or deployed.
+
+---
+
+## 🚀 Installation & Setup
+
+**1. Clone the repository:**
+```bash
+git clone [https://github.com/Rahul-college-use/SIH-26032-Smartmandi-Frontend.git](https://github.com/Rahul-college-use/SIH-26032-Smartmandi-Frontend.git)
+cd SIH-26032-SmartMandi-Frontend
+## 📸 Screenshots & Interfaces
+
+### 🌐 Public Pages (Without Login)
+![Public Page 1](frontend/src/assets/images/image-1.png)
+![Public Page 2](frontend/src/assets/images/image-1.png)
+![Public Page 3](frontend/src/assets/images/image-2.png)
+
+### 🧑‍🌾 Farmer Portal (User Side)
+**Farmer Dashboard**
+![Farmer Dashboard](frontend/src/assets/images/image-3.png)
+
+**Complete & Recent Slot Details**
+![Complete & Recent Slot Details](frontend/src/assets/images/image-4.png)
+
+**Procurement Center View**
+![Procurement Center View](frontend/src/assets/images/image-5.png)
+
+**My Booking Slot Details**
+![My Booking Slot Details](frontend/src/assets/images/image-6.png)
+
+**Additional Slot Details**
+![Additional Slot Details](frontend/src/assets/images/image-7.png)
+
+**Live Tracking & Viewing**
+![Live Tracking & Viewing](frontend/src/assets/images/image-8.png)
+
+**Slot Booking Interface**
+![Slot Booking Interface](frontend/src/assets/images/image-9.png)
+
+### 👨‍💼 Operator & Admin Portal
+**Admin Dashboard**
+![Admin Dashboard](frontend/src/assets/images/image-10.png)
+
+**AI Predicted Wait Time & MSP Price Predictions**
+![AI Predicted Wait Time & MSP Price Predictions](frontend/src/assets/images/image-11.png)
+
+**Capacity Engine: Slot Creation**
+![Capacity Engine: Slot Creation](frontend/src/assets/images/image-12.png)
+
+**Gate Guard QR Scanner UI**
+![Gate Guard QR Scanner UI](frontend/src/assets/images/image-13.png)
