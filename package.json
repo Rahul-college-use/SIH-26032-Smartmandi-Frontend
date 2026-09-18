@@ -1,0 +1,31 @@
+{
+  "name": "procurement-frontend",
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "axios": "^1.7.2",
+    "chart.js": "^4.5.1",
+    "html5-qrcode": "^2.3.8",
+    "lucide-react": "^1.39.0",
+    "qrcode-terminal": "^0.12.0",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.2.8",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.3",
+    "socket.io-client": "^4.7.5",
+    "tailwindcss": "^4.3.3",
+    "whatsapp-web.js": "^1.34.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "vite": "^8.2.2"
+  }
+}

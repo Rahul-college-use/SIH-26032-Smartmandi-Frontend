@@ -1,0 +1,12 @@
+@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+/* VoiceAssistant.css */
+.assistant-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Taaki ye sabse upar dikhe */
+  /* Baki styling jaise mic icon, background color aadi */
+}
