@@ -45,10 +45,10 @@ git clone [https://github.com/Rahul-college-use/SIH-26032-Smartmandi-Frontend.gi
 cd SIH-26032-SmartMandi-Frontend
 ## 📸 Screenshots & Interfaces
 
-### 🌐 ./public Pages (Without Login)
-![./public Page 1](./public/images/image.png)
-![./public Page 2](./public/images/image-1.png)
-![./public Page 3](./public/images/image-2.png)
+### 🌐 Public Pages (Without Login)
+![Public Page 1](./public/images/image.png)
+![Public Page 2](./public/images/image-1.png)
+![Public Page 3](./public/images/image-2.png)
 
 ### 🧑‍🌾 Farmer Portal (User Side)
 **Farmer Dashboard**
