@@ -46,41 +46,41 @@ cd SIH-26032-SmartMandi-Frontend
 ## 📸 Screenshots & Interfaces
 
 ### 🌐 Public Pages (Without Login)
-![Public Page 1](frontend/src/assets/images/image-1.png)
-![Public Page 2](frontend/src/assets/images/image-1.png)
-![Public Page 3](frontend/src/assets/images/image-2.png)
+![Public Page 1](public/images/image.png)
+![Public Page 2](public/images/image-1.png)
+![Public Page 3](public/images/image-2.png)
 
 ### 🧑‍🌾 Farmer Portal (User Side)
 **Farmer Dashboard**
-![Farmer Dashboard](frontend/src/assets/images/image-3.png)
+![Farmer Dashboard](public/images/image-3.png)
 
 **Complete & Recent Slot Details**
-![Complete & Recent Slot Details](frontend/src/assets/images/image-4.png)
+![Complete & Recent Slot Details](public/images/image-4.png)
 
 **Procurement Center View**
-![Procurement Center View](frontend/src/assets/images/image-5.png)
+![Procurement Center View](public/images/image-5.png)
 
 **My Booking Slot Details**
-![My Booking Slot Details](frontend/src/assets/images/image-6.png)
+![My Booking Slot Details](public/images/image-6.png)
 
 **Additional Slot Details**
-![Additional Slot Details](frontend/src/assets/images/image-7.png)
+![Additional Slot Details](public/images/image-7.png)
 
 **Live Tracking & Viewing**
-![Live Tracking & Viewing](frontend/src/assets/images/image-8.png)
+![Live Tracking & Viewing](public/images/image-8.png)
 
 **Slot Booking Interface**
-![Slot Booking Interface](frontend/src/assets/images/image-9.png)
+![Slot Booking Interface](public/images/image-9.png)
 
 ### 👨‍💼 Operator & Admin Portal
 **Admin Dashboard**
-![Admin Dashboard](frontend/src/assets/images/image-10.png)
+![Admin Dashboard](public/images/image-10.png)
 
 **AI Predicted Wait Time & MSP Price Predictions**
-![AI Predicted Wait Time & MSP Price Predictions](frontend/src/assets/images/image-11.png)
+![AI Predicted Wait Time & MSP Price Predictions](public/images/image-11.png)
 
 **Capacity Engine: Slot Creation**
-![Capacity Engine: Slot Creation](frontend/src/assets/images/image-12.png)
+![Capacity Engine: Slot Creation](public/images/image-12.png)
 
 **Gate Guard QR Scanner UI**
-![Gate Guard QR Scanner UI](frontend/src/assets/images/image-13.png)
+![Gate Guard QR Scanner UI](public/images/image-13.png)
