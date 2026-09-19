@@ -29,6 +29,7 @@ import Footer from '../components/Footer';
 import CardHomeLogin from '../components/CardHomeLogin';
 import FeatureCard from '../components/FeatureCard';
 import Workcard from '../components/Workcard';
+import Msp_current_offline from '../components/Msp_current_offline';
 
 export default function HomePage({ onGetStarted, onLogin }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -196,7 +197,7 @@ export default function HomePage({ onGetStarted, onLogin }) {
         </div>
       </motion.div>
 
-      {/* Navigation Bar - Redesigned Single-Line & Fully Responsive */}
+      {/* Navigation Bar */}
       <motion.header
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -226,7 +227,7 @@ export default function HomePage({ onGetStarted, onLogin }) {
             </div>
           </div>
 
-          {/* Desktop Nav Links (Single-Line Compact Row) */}
+          {/* Desktop Nav Links (Matching Mobile Links with Correct IDs) */}
           <nav className="hidden lg:flex items-center gap-1 xl:gap-2 bg-slate-100/80 p-1.5 rounded-2xl border border-slate-200/60 text-xs xl:text-sm font-semibold text-slate-600 whitespace-nowrap">
             <a href="#home" className="px-3.5 py-2 rounded-xl text-emerald-700 bg-white shadow-xs transition-all">Home</a>
             <a href="#ai-predictor" className="px-3.5 py-2 rounded-xl hover:text-slate-900 hover:bg-white/60 transition-all flex items-center gap-1"><Cpu className="w-3.5 h-3.5 text-emerald-600" /> AI Predictor</a>
@@ -722,22 +723,121 @@ export default function HomePage({ onGetStarted, onLogin }) {
           </div>
         </section>
 
-        {/* REAL MANDI YARDS CONGESTION RADAR */}
-      <PriceTrendWidget />
+        {/* REAL MANDI YARDS CONGESTION RADAR (Linked with id="radar") */}
+        <div id="radar">
+          <PriceTrendWidget />
+        </div>
+
+        {/* OFFICIAL MSP BENCHMARKS SECTION */}
+        <section id="msp" className="py-14 sm:py-20 bg-white border-b border-slate-200">
+          <Msp_current_offline Scale={Scale} mspRates={mspRates} motion={motion} />
+        </section>
+
+        {/* GRAPHICAL ANALYTICS SECTION (Linked with id="graph") */}
+        <div id="graph" className="py-6">
+          {/* GRAPHICAL ANALYTICS SECTION */}
+          <section id="graph" className="py-14 sm:py-20 bg-slate-900 text-white border-y border-slate-800">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center max-w-2xl mx-auto mb-12 space-y-2">
+                <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase tracking-wider border border-emerald-500/20">
+                  <Activity className="w-4 h-4 text-emerald-400" /> Smart Analytics & Insights
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+                  APMC Yard Performance & Procurement Analytics
+                </h2>
+                <p className="text-slate-400 text-xs sm:text-sm">
+                  Real-time data telemetry aur queue optimization metrics jo transparent procurement ko sunishchit karte hain.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Card 1: Dynamic Ratio Efficiency */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4 }}
+                  className="bg-slate-950 border border-slate-800 p-6 rounded-3xl space-y-4 hover:border-emerald-500/50 transition-all"
+                >
+                  <div className="w-10 h-10 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-black">
+                    4:1
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-white">Dynamic Triage Efficiency</h3>
+                    <p className="text-xs text-slate-400 mt-1">
+                      Online slot holders aur walk-ins ka 4:1 ratio engine yard par 94% tak physical congestion kam karta hai.
+                    </p>
+                  </div>
+                  <div className="pt-4 border-t border-slate-900 flex items-center justify-between text-xs">
+                    <span className="text-slate-500">Congestion Reduction</span>
+                    <span className="text-emerald-400 font-bold">94.2% Success</span>
+                  </div>
+                </motion.div>
+
+                {/* Card 2: Geofence Fraud Prevention */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.1 }}
+                  className="bg-slate-950 border border-slate-800 p-6 rounded-3xl space-y-4 hover:border-emerald-500/50 transition-all"
+                >
+                  <div className="w-10 h-10 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-black">
+                    800m
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-white">Geofence Radius Lock</h3>
+                    <p className="text-xs text-slate-400 mt-1">
+                      Haversine formula ke through mandiwala 800-meter radius validate karta hai, jisse proxy-selling poori tarah block hoti hai.
+                    </p>
+                  </div>
+                  <div className="pt-4 border-t border-slate-900 flex items-center justify-between text-xs">
+                    <span className="text-slate-500">Proxy Attempts Blocked</span>
+                    <span className="text-emerald-400 font-bold">100% Secure</span>
+                  </div>
+                </motion.div>
+
+                {/* Card 3: DBT Settlement Speed */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.2 }}
+                  className="bg-slate-950 border border-slate-800 p-6 rounded-3xl space-y-4 hover:border-emerald-500/50 transition-all"
+                >
+                  <div className="w-10 h-10 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-black">
+                    DBT
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-white">Instant Bank Transfer</h3>
+                    <p className="text-xs text-slate-400 mt-1">
+                      Dharamkante par weight record hone ke turant baad PFMS ke madhyam se seedhe kisan ke khate mein rashi transfer hoti hai.
+                    </p>
+                  </div>
+                  <div className="pt-4 border-t border-slate-900 flex items-center justify-between text-xs">
+                    <span className="text-slate-500">Average Payout Time</span>
+                    <span className="text-emerald-400 font-bold">&lt; 2 Minutes</span>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </section>
+        </div>
+
         {/* 4-STEP HOW IT WORKS SECTION */}
         <Workcard steps={steps} />
 
         {/* FEATURE CARDS GRID */}
-            <FeatureCard features={features} />
+        <FeatureCard features={features} />
 
         {/* BOTTOM CTA SECTION */}
-       <CardHomeLogin user={user} onGetStarted={onGetStarted} onLogin={onLogin} isAdminOrOperator={isAdminOrOperator} navigate={navigate} />
+        <CardHomeLogin user={user} onGetStarted={onGetStarted} onLogin={onLogin} isAdminOrOperator={isAdminOrOperator} navigate={navigate} />
 
       </main>
 
       {/* Footer Component Integration */}
-        <Footer />
-     
+      <Footer />
+
     </div>
   );
 }
